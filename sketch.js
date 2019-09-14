@@ -1,8 +1,8 @@
 let numOfCircles = 38;
 let circlePadding = 2;
-let amplitude;
 
-var wavelength;
+let amplitude;
+let wavelength;
 
 let framerate = 60; //has to be 60 for the wavelength to work out
 
@@ -17,8 +17,8 @@ function setup() {
   frameRate(framerate);
 
   //amplitude = 0.618034 + 5; // funny water animation :D
-  amplitude = 0.381966 * height/2; // water animation :D
-  
+  amplitude = 0.381966 * height/2;
+
   wavelength = width/2; //in px
 
   wave1 = new Wave(amplitude, wavelength, numOfCircles, 360 * 1.618);
