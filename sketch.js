@@ -1,4 +1,4 @@
-let numOfCircles = 42;
+let numOfCircles = 38;
 let circlePadding = 2;
 let amplitude;
 
@@ -19,7 +19,7 @@ function setup() {
   //amplitude = 0.618034 + 5; // funny water animation :D
   amplitude = 0.381966 * height/2; // water animation :D
   
-  wavelength = width/3; //in px
+  wavelength = width/2; //in px
 
   wave1 = new Wave(amplitude, wavelength, numOfCircles, 360 * 1.618);
   wave2 = new Wave(amplitude/2, wavelength/1.618, numOfCircles, 360 * 0.3819);
@@ -33,10 +33,9 @@ function draw() {
   background(360 * 0.145898, 50, 100);
 
   wave1.show();
-  wave2.show();
+  //wave2.show();
 
-
-  wave1.add(wave2);
+  //wave1.add(wave2);
 
   t += 1/framerate; // wave speed
 
